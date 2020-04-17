@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bcb0ff;
+}
+table {
+  width: 50%;
+  border-collapse: collapse;
+  font-family: Arial, Verdana;
+  font-size: 0.9em;
+  color: #444;
+  margin: 50px;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+th, tfoot td {
+  color: #000;
+  background-color: #CCC;
+  font-weight: bold;
+}
+
+td, th {
+  padding: 5px 10px 5px 10px;
+  border: solid 1px #EEE;
+}
+h1{
+  font-family:courier;
+  color: #23137d;
+}
+a{
+  transition: color .5s;
+}
+a:hover{
+  color: white;
+}

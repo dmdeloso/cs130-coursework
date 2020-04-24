@@ -65,7 +65,7 @@
    display: grid;
    /* 2 columns and 5 rows */
    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 2.5fr 4fr 8fr 6fr 6fr;
+   grid-template-rows: 2.5fr 4fr 8fr 6fr 6fr 6fr;
    grid-template-areas: "logo ." 
                         "nav nav"
                         "c c"

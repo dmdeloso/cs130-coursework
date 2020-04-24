@@ -1,0 +1,82 @@
+.container {
+   display: grid;
+   /* 4 columns and 3 rows */
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: .3fr 1fr 1fr;
+   grid-template-areas: "logo . nav nav" 
+                        "c d e feed"
+                        "content content content feed";
+   column-gap: 5vw;
+   row-gap: 5vh;
+
+   min-height: 100vh;
+}
+.menu1, .menu2, .card1, .card2, .card3, .main, .aside{
+   border: 1px solid black;
+}
+.menu1{
+   background-color: pink;
+   grid-area: logo;
+}
+.menu2{
+   background-color: yellow;
+   grid-area: nav;
+}
+.card1{
+   background-color: lightblue;
+   grid-area: c;
+}
+.card2{
+   background-color: lightblue;
+   grid-area: d;
+}
+.card3{
+   background-color: lightblue;
+   grid-area: e;
+}
+.main{
+   background-color: lightblue;
+   grid-area: content;
+}
+.aside{
+   background-color: darkgray;
+   grid-area: feed;
+}
+@media (max-width: 1024px) and (min-width: 601px) {
+   .container{
+   display: grid;
+   /* 2 columns and 5 rows */
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 8fr 6fr 4fr;
+   grid-template-areas: "logo nav" 
+                        "feed feed"
+                        "c d"
+                        "e e"
+                        "content content";
+   column-gap: 2vw;
+   row-gap: 2vh;
+}
+.menu1{
+   width: 50%;
+}
+}
+@media (max-width: 600px) {
+   .container{
+   display: grid;
+   /* 2 columns and 5 rows */
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 2.5fr 4fr 8fr 6fr 6fr;
+   grid-template-areas: "logo ." 
+                        "nav nav"
+                        "c c"
+                        "d d"
+                        "e e"
+                        "content content";
+}
+.aside{
+   display: none;
+}
+.menu1{
+   width: 50%;
+}
+}

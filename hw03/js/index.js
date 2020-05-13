@@ -106,7 +106,7 @@ const addImage = () => {
     userImage.onclick = showPhoto;
   }
   else {
-    alert("Enter a valid image url.")
+    alert("Enter a valid image url. Valid file types: .jpeg, .jpg, .gif, .png")
   }
 }
 

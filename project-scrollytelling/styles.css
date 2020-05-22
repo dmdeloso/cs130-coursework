@@ -1,0 +1,55 @@
+/* .scrollPage{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  z-index: 0;
+} */
+:root{
+  --number-of-graphs: 12;
+}
+main{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+}
+.scroll-graph{
+  width: 25%;
+  background-color: white;
+  opacity: .5;
+  margin: 0 2em 50% 2em;
+  font-size: 1.5em;
+  z-index: 1;
+  position: relative;
+  top: 2em;
+  padding: 1em;
+}
+.last-graph{
+  margin-bottom: 0;
+  bottom: 2em;
+}
+.transition{
+  /* color: white; */
+  color: red;
+
+}
+.window{
+  background-image: url('img/vince1.jpg');
+  background-attachment: fixed;
+  height: calc(150vh * var(--number-of-graphs));
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-size: cover;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
